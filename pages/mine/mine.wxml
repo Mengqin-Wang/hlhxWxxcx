@@ -1,0 +1,64 @@
+<!--pages/mine/mine.wxml-->
+
+<view wx:if="{{isHide}}">
+	<view wx:if="{{canIUse}}">
+		<view class='header'>
+			<image src='../../image/tag.png'></image>
+			<view class="header_text">活灵活现小程序</view>
+		</view>
+
+		<view class='content'>
+			<view>申请获取以下权限</view>
+			<text>获得你的公开信息(昵称，头像等)</text>
+		</view>
+
+		<button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+			授权登录
+		</button>
+	</view>
+	<view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+	<view class="personal">
+		<open-data class="userAvatarUrl" type="userAvatarUrl"></open-data>
+
+		<view class="line">
+			<open-data class="userNickName line1" type="userNickName" lang="zh_CN"></open-data>
+			<open-data class="userNickName line2" type="userCity" lang="zh_CN"></open-data>
+
+		</view>
+
+	</view>
+
+	<view>
+		<view class="threeFunction">
+			<block wx:for="{{three_function}}" wx:for-index="index" wx:key="key">
+				<navigator url="{{item.fun_url}}">
+					<view class="threeFunItem">
+						<image src="{{item.image}}"></image>
+						{{item.name}}
+					</view>
+				</navigator>
+			</block>
+		</view>
+	</view>
+
+
+
+	<view class="personal_function">
+		<block wx:for="{{personal_function}}" wx:for-index="index" wx:key="key">
+			<view class="myFunction">
+				<image src="{{item.imgUrl}}"></image>
+				<navigator url="{{item.fun_url}}">
+					<view class="setting">
+						{{item.name}}
+							<image class="right" src="/image/right.png"></image>
+					</view>
+				
+				</navigator>
+			</view>
+		</block>
+	</view>
+
+</view>

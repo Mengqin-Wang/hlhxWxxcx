@@ -1,0 +1,101 @@
+<!--index.wxml-->
+
+<!-- 头部轮播图 -->
+<view class="headerSwiper">
+	<swiper indicator-dots autoplay interval="{{interval}}" duration="{{duration}}" circular>
+		<swiper-item class="swipterItem" wx:for="{{rotationList}}" wx:for-item="item" wx:key="id">
+			<image class="swiperImage" src="{{item.image}}" mode="scaleToFill" />
+		</swiper-item>
+	</swiper>
+</view>
+
+<!-- 功能列表 -->
+<view class="functionList">
+	<navigator class="function_item" url="{{item.url}}" wx:for="{{functionList}}" wx:key="id" wx:for-item="item" hover-class="none">
+		<image src="{{item.image}}"></image>
+		<text>{{item.navName}}</text>
+	</navigator>
+</view>
+
+<!-- 咨询快报 -->
+<view class="consult">
+	<image class="consultIcon" src="../../image/consult.png"></image>
+	<swiper vertical autoplay interval="{{interval}}" duration="{{duration}}" circular class="dynaimcList">
+		<swiper-item class="consultItem" wx:for="{{dynamicList}}" wx:for-item="item" wx:key="id" data-id="{{item.id}}" bindtap="DynamicDetail">
+			<view class="dynaimcTitle">{{item.title}}</view>
+		</swiper-item>
+	</swiper>
+</view>
+
+<!-- 最新动态 -->
+<view class="recentDynaimc">
+	<view class="titleDynaimc">最新动态</view>
+	<view class="moreDynaimc" bindtap="moreDynaimc">
+		<text>更多</text>
+		<image src="/image/right.png"></image>
+	</view>
+</view>
+
+<view class="line">
+	<!-- 分割线 -->
+	<view class="divLine"></view>
+</view>
+
+<view class="DynaimcList">
+	<view class="Dynamicitem" wx:key="id" wx:for="{{dynamicList}}" wx:for-item="item" data-id="{{item.id}}" bindtap="DynamicDetail">
+		<image class="DynamicImg" src="{{item.src}}"></image>
+		<view class="show_bot flex">
+			<view class="show_title">
+				{{item.title}}
+			</view>
+		</view>
+	</view>
+</view>
+
+<!-- 考级风采 -->
+<view class="self-service-title">
+	<view class="titleDynaimc">考级风采</view>
+	<view class="moreDynaimc" bindtap="moreGradingTest">
+		<text>更多</text>
+		<image src="/image/right.png"></image>
+	</view>
+</view>
+
+<view class="line">
+	<!-- 分割线 -->
+	<view class="divLine"></view>
+</view>
+<!-- 老师列表 -->
+<view class="teacherList">
+	<swiper autoplay interval="{{interval}}" duration="{{duration}}" circular  previous-margin="0rpx" next-margin="150rpx" class="teacherSwiper">
+		<swiper-item class="teacherItem" wx:for="{{teacherList}}" wx:for-item="item" wx:key="id" bindtap="teacherDetail" data-id="{{item.id}}">
+			<view class="teacherSwiperItem">
+			<view class="teacherborder">
+				<image class="teacherImage" src="{{item.image}}" mode="scaleToFill" />
+				<view class="teacherTitle">
+					<text style="color:#333333">{{item.title}}</text>
+					<text style="color:#FF7128">{{item.type}}</text>
+				</view>
+				<view class="teacher">{{item.detail}}</view>
+				</view>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>
+
+<!-- 自助服务 -->
+<view class="self-service-title">
+	<view class="titleDynaimc">自助服务</view>
+</view>
+<view class="line">
+	<!-- 分割线 -->
+	<view class="divLine"></view>
+</view>
+
+<view class="self-service">
+	<view class="service-item" style="background-color:{{item.color}}" wx:for="{{serviceList}}" wx:for-item="item" wx:key="id">
+		<navigator class="service" url="{{item.url}}" hover-class="none">
+			{{item.name}}
+		</navigator>
+	</view>
+</view>

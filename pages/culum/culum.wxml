@@ -1,0 +1,21 @@
+<!--pages/culum/culum.wxml-->
+<view class="headerTab">
+	<view wx:for="{{tabList}}" wx:for-item="item" wx:key="id" bindtap="hanldeItemTab" data-index="{{index}}" data-id="{{item.id}}" class="{{item.isActive?'active':''}}">
+		<text>{{item.title}}</text>
+	</view>
+</view>
+
+<view class="culum">
+	<view wx:for="{{culumList}}" wx:for-item="item" wx:key="id" data-index="{{index}}" data-id="{{item.id}}" class="culumItem" bindtap="culumDetail">  
+		  <image src="{{item.src}}"/>
+      <view class="culumDetail">
+        <view class="Title">{{item.title}}</view>
+        <view class="teacherName">{{item.teacherName}}</view>
+        <view class="classPrice">
+          <view class="Price">￥{{item.price-item.discount}}</view>
+          <view class="Price2">￥{{item.price}}</view>
+          <view class="classNum">{{item.num}}人在学</view>
+        </view>
+      </view>
+	</view>
+</view>

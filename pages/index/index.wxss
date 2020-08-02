@@ -1,0 +1,288 @@
+/**index.wxss**/
+Page {
+  background-color: #F4F4F4;
+}
+
+.headerSwiper {
+  height: 420rpx;
+  width: 100%;
+}
+
+.headerSwiper swiper {
+  height: 420rpx;
+  width: 100%;
+}
+
+.swipterItem {
+  height: 420rpx;
+  width: 100%;
+}
+
+.swiperImage {
+  height: 420rpx;
+  width: 100%;
+}
+
+.functionList {
+  width: 100%;
+  height: 430rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30rpx;
+}
+
+.function_item {
+  width: 25%;
+  height: 50%;
+}
+
+.function_item image {
+  width: 136rpx;
+  height: 136rpx;
+  display: block;
+  margin: auto;
+}
+
+.function_item text {
+  display: block;
+  font-family: Source Han Sans CN;
+  text-align: center;
+  color: #333;
+}
+
+.consult {
+  width: 100%;
+  height: 60rpx;
+  background-color: white;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.consultIcon {
+  margin-left: 20rpx;
+  width: 280rpx;
+  height: 50rpx;
+}
+
+.dynaimcList {
+  width: 400rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+.dynaimcTitle {
+  width: 400rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  line-height: 40rpx;
+  color: rgba(136, 136, 136, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recentDynaimc {
+  margin-top: 30rpx;
+  background-color: white;
+  width: 100%;
+  height: 100rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20rpx;
+}
+
+.titleDynaimc {
+  font-size: 40rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  line-height: 60rpx;
+  color: rgba(51, 51, 51, 1);
+  border-left: solid 12rpx rgba(255, 113, 40, 1);
+  padding-left: 40rpx;
+}
+
+.recentDynaimc text {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  line-height: 60rpx;
+  color: rgba(102, 102, 102, 1);
+}
+
+.recentDynaimc image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.line {
+  width: 100%;
+  height: 8rpx;
+  background-color: white;
+}
+
+.divLine {
+  width: 94%;
+  height: 4rpx;
+  background-color: #F4F4F4;
+  margin-left: 3%;
+}
+
+.DynaimcList {
+  width: 100%;
+  height: 500rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: white;
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.Dynamicitem {
+  width: 48%;
+  height: 45%;
+  position: relative;
+  margin-top: 10rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+.DynamicImg {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.show_bot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  line-height: 50rpx;
+  width: 100%;
+}
+
+.show_title {
+  width: 60%;
+  color: #fff;
+  font-size: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 10rpx;
+}
+
+
+
+.teacherList {
+  width: 100%;
+  background-color: white;
+  height: 630rpx;
+}
+
+.teacherSwiper {
+  width: 100%;
+  height: 630rpx;
+}
+
+.teacherSwiperItem {
+  width: 90%;
+  height: 610rpx;
+  display: flex;
+  background-color: white;
+  border-radius: 20rpx;
+  flex-direction: column;
+  /* box-shadow: 0rpx 12rpx 8rpx -12rpx #000; */
+  box-shadow:2rpx 2rpx 5rpx gray;
+}
+
+.teacherborder {
+  padding: 20rpx;
+}
+
+.teacherTitle {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+}
+
+.teacherImage {
+  height: 450rpx;
+  width: 100%;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+}
+
+.teacher {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  color: #666666;
+  font-size: 28rpx;
+  padding-top: 8rpx;
+}
+
+
+
+.self-service-title {
+  background-color: white;
+  width: 100%;
+  height: 100rpx;
+  align-items: center;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: rgba(102, 102, 102, 1);
+}
+
+.self-service-title image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 40rpx;
+  vertical-align: middle;
+}
+
+.self-service {
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  width: 100%;
+  height: 440rpx;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60rpx;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+}
+
+.service-item {
+  width: 48%;
+  height: 180rpx;
+  color: white;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 40rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  opacity: 1;
+}

@@ -1,0 +1,94 @@
+/* pages/culum/culum.wxss */
+.headerTab {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 80rpx;
+  justify-content: space-evenly;
+  font-size: 34rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 80rpx;
+  color: rgba(53, 53, 53, 1);
+}
+
+.active {
+  color: #FB7B2D;
+  border-bottom: #FB7B2D 8rpx solid;
+}
+
+.culum {
+  width: 100%;
+}
+
+.culumItem {
+  width: 90%;
+  height: 260rpx;
+  margin-left: 5%;
+  border-top: 2rpx solid #E4E4E4;
+  border-bottom: 2rpx solid #E4E4E4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.culumItem image {
+  width: 40%;
+  height: 70%;
+  border-radius: 8rpx;
+}
+
+.culumDetail {
+  width: 55%;
+  height: 70%;
+}
+
+.Title {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 60rpx;
+  color: rgba(53, 53, 53, 1);
+}
+
+.teacherName {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 50rpx;
+  color: rgba(102, 102, 102, 1);
+}
+
+.classPrice {
+  display: flex;
+  flex-direction: row;
+}
+
+.Price {
+  font-size: 42rpx;
+  font-family: DIN;
+  font-weight: bold;
+  line-height: 100rpx;
+  color: rgba(251, 123, 45, 1);
+}
+
+.Price2 {
+  font-size: 28rpx;
+  font-family: DIN;
+  font-weight: 400;
+  line-height: 100rpx;
+  color: rgba(185, 185, 185, 1);
+  text-decoration: line-through;
+  margin-left: 20rpx;
+}
+
+.classNum {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 100rpx;
+  color: rgba(153, 153, 153, 1);
+  opacity: 0.9;
+  margin-left: 20rpx;
+}

@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/exchangeMall/exchangeMall",
+    "pages/culum/culum"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#31CABE",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/tabbar/index_empty.png",
+        "selectedIconPath": "image/tabbar/index_full.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/exchangeMall/exchangeMall",
+        "iconPath": "image/tabbar/agency_empty.png",
+        "selectedIconPath": "image/tabbar/agency_full.png",
+        "text": "兑换商城"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "image/tabbar/mine_empty.png",
+        "selectedIconPath": "image/tabbar/mine_full.png",
+        "text": "我的"
+      }
+    ]
+  }
+}
