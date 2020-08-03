@@ -82,6 +82,20 @@ Page({
                                 //           console.log("[session_key]", res.data.session_key)
                                 //       }
                                 //   });
+<<<<<<< HEAD
+=======
+//                                   wx.request({
+//                                       // 自行补上自己的 APPID 和 SECRET
+//                                       url: 'https://api.weixin.qq.com/sns/jscode2session?appid={{自己的appid}}&secret={{自己的密码}}&js_code=' + res.code + '&grant_type=authorization_code',
+//                                       success: res => {
+//                                           // 获取到用户的 openid
+//                                           console.log(res)
+//                                           console.log("用户的openid:" + res.data.openid)
+//                                           console.log("[session_key]", res.data.session_key)
+//                                       }
+//                                   });
+
+>>>>>>> e0514b5b7992ca36c9a75de5d74b6063b6c59a5f
                               }
                           });
                       }
