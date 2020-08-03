@@ -1,0 +1,19 @@
+<!--pages/outline/outline.wxml-->
+<view class="HeaderSwiper">
+	<swiper class='swiper-block' autoplay circular indicator-active-color="white" indicator-dots indicator-color="rgba(255,255,255,0.5)" previous-margin='90rpx' next-margin='90rpx' current='0' bindchange='swiperChange' >
+			<swiper-item class="swiper-item" wx:for='{{swiperImgUrls}}' data-id="{{item.id}}"  wx:for-item="item" wx:key="id" bindtap="outlineDetail">
+				<view class='box {{swiperIndex == index ? "active" : ""}}'>
+					<image src="{{item.image}}"></image>
+
+					<view class="detail" data-id="{{item.id}}" bindtap="detailItem">
+						立即查看
+					</view>
+
+				</view>
+			</swiper-item>
+	</swiper>
+</view>
+
+<button class="share" open-type="share">
+分享给好友
+</button>
