@@ -19,7 +19,7 @@ Page({
     teacherList:"",//考级风采列表
     serviceList:[
       {name:"成绩查询",color:"#00D6B9",url:"/pages/short/short"},
-      {name:"考级大纲",color:"#00B9F2",url:"/pages/dg/dg"},
+      {name:"考级大纲",color:"#00B9F2",url:"/pages/outline/outline"},
       {name:"地图导航",color:"#FE9600",url:"/pages/map/map"},
       {name:"机构简介",color:"#8965FD",url:"/pages/jg/jg"},
     ]//自助服务集合

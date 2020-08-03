@@ -1,0 +1,48 @@
+/* pages/teach/teach.wxss */
+Page {
+  background-color: #F4F4F4;
+}
+
+.teacher {
+  width: 100%;
+}
+
+.teacherItem {
+  background-color: white;
+  border-radius: 10rpx;
+  width: 90%;
+  height: 360rpx;
+  margin: 40rpx 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.teacherItem image {
+  width: 34%;
+  height: 85%;
+  border-radius: 4rpx;
+}
+
+.teacherDetail {
+  width: 50%;
+  height: 85%;
+  border: 2rpx solid red;
+}
+
+.teacherName {
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  line-height: 60rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.teacherType {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  line-height: 60rpx;
+  color: rgba(251, 123, 45, 1);
+}

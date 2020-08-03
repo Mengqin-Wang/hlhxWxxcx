@@ -1,10 +1,13 @@
 {
   "pages": [
+    
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/exchangeMall/exchangeMall",
-    "pages/culum/culum"
+    "pages/culum/culum",
+    "pages/teach/teach",
+    "pages/outline/outline"
   ],
   "window": {
     "backgroundTextStyle": "light",
