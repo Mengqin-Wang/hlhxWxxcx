@@ -9,7 +9,7 @@ export function request(params){
     //     title: '加载中',
     //   })
     //定义公共部分 url
-    const baseUrl = "http://192.168.1.151:8090/"
+    const baseUrl = "http://192.168.1.151:8086/"
     //将传过来的参数结构出来
     return new Promise((resolve,reject)=>{
         // 发起请求          

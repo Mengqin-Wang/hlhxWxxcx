@@ -1,13 +1,14 @@
 {
   "pages": [
-    
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/exchangeMall/exchangeMall",
     "pages/culum/culum",
     "pages/teach/teach",
-    "pages/outline/outline"
+    "pages/outline/outline",
+    "pages/outlineDetail/outlineDetail",
+    "pages/scoreInquiry/scoreInquiry"
   ],
   "window": {
     "backgroundTextStyle": "light",

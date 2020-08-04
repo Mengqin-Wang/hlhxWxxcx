@@ -1,3 +1,5 @@
+import { request } from "../../utils/http.js" 
+import snyc from "../../utils/sync.js"
 Page({
   data: {
       //判断小程序的API，回调，参数，组件等是否在当前版本可用。
@@ -48,6 +50,7 @@ Page({
       success: function(res) {
         var code = res.code;
         if (code) {
+          
           console.log('获取用户登录凭证：' + code);
         } else {
           console.log('获取用户登录态失败：' + res.errMsg);
@@ -68,6 +71,7 @@ Page({
                               success: res => {
                                   // 获取到用户的 code 之后：res.code
                                   console.log("用户的code:" + res.code);
+                                  
                                   console.log(res)
                                  
                                   // 可以传给后台，再经过解析获取用户的 openid
@@ -82,8 +86,8 @@ Page({
                                 //           console.log("[session_key]", res.data.session_key)
                                 //       }
                                 //   });
-<<<<<<< HEAD
-=======
+// <<<<<<< HEAD
+// =======
 //                                   wx.request({
 //                                       // 自行补上自己的 APPID 和 SECRET
 //                                       url: 'https://api.weixin.qq.com/sns/jscode2session?appid={{自己的appid}}&secret={{自己的密码}}&js_code=' + res.code + '&grant_type=authorization_code',
@@ -95,7 +99,7 @@ Page({
 //                                       }
 //                                   });
 
->>>>>>> e0514b5b7992ca36c9a75de5d74b6063b6c59a5f
+// >>>>>>> e0514b5b7992ca36c9a75de5d74b6063b6c59a5f
                               }
                           });
                       }

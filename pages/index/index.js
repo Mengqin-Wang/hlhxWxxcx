@@ -18,7 +18,7 @@ Page({
     dynamicList:"",//动态集合
     teacherList:"",//考级风采列表
     serviceList:[
-      {name:"成绩查询",color:"#00D6B9",url:"/pages/short/short"},
+      {name:"成绩查询",color:"#00D6B9",url:"/pages/scoreInquiry/scoreInquiry"},
       {name:"考级大纲",color:"#00B9F2",url:"/pages/outline/outline"},
       {name:"地图导航",color:"#FE9600",url:"/pages/map/map"},
       {name:"机构简介",color:"#8965FD",url:"/pages/jg/jg"},
@@ -44,17 +44,20 @@ Page({
          complete: (res) => {
            var code=res.code
            console.log(code)
-           request({url:"wx/api/login",data:{code:code,organId:organId,userId:userId}}).then((res)=>{
-            var token=res.data.data.principal;
-            console.log(token)
+           request({url:"user/login",data:{code:code,organId:organId,userId:userId}}).then((res)=>{
+            var token=res.data.data.principal
+            console.log(res)
+          
             
             //向后台发送code 获取token  token里包含了id organId  openId 放入缓存
             snyc.put("Authorization",token,24*60*60)
             //向后台获取到用户信息
-             request({url:"wx/api/info",
+             request({url:"user/info",
                header:{
                  'context-type': 'application/json',
                  'Authorization':snyc.get("Authorization")}}).then((res)=>{
+                   console.log(res)
+                   return
                    app.globalData.userInfo=res.data.data;
                   if(res.data.data.organId){
                     // 头部轮播图

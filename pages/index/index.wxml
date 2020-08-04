@@ -29,7 +29,10 @@
 
 <!-- 最新动态 -->
 <view class="recentDynaimc">
-	<view class="titleDynaimc">最新动态</view>
+
+	<view class="titleDynaimc">
+		<image id="iconImage" src="/image/good.png"></image>最新动态
+	</view>
 	<view class="moreDynaimc" bindtap="moreDynaimc">
 		<text>更多</text>
 		<image src="/image/right.png"></image>
@@ -54,7 +57,9 @@
 
 <!-- 考级风采 -->
 <view class="self-service-title">
-	<view class="titleDynaimc">考级风采</view>
+	<view class="titleDynaimc">
+		<image id="iconImage" src="/image/good.png"></image>考级风采
+	</view>
 	<view class="moreDynaimc" bindtap="moreGradingTest">
 		<text>更多</text>
 		<image src="/image/right.png"></image>
@@ -67,16 +72,16 @@
 </view>
 <!-- 老师列表 -->
 <view class="teacherList">
-	<swiper autoplay interval="{{interval}}" duration="{{duration}}" circular  previous-margin="0rpx" next-margin="150rpx" class="teacherSwiper">
+	<swiper autoplay interval="{{interval}}" duration="{{duration}}" circular previous-margin="0rpx" next-margin="150rpx" class="teacherSwiper">
 		<swiper-item class="teacherItem" wx:for="{{teacherList}}" wx:for-item="item" wx:key="id" bindtap="teacherDetail" data-id="{{item.id}}">
 			<view class="teacherSwiperItem">
-			<view class="teacherborder">
-				<image class="teacherImage" src="{{item.image}}" mode="scaleToFill" />
-				<view class="teacherTitle">
-					<text style="color:#333333">{{item.title}}</text>
-					<text style="color:#FF7128">{{item.type}}</text>
-				</view>
-				<view class="teacher">{{item.detail}}</view>
+				<view class="teacherborder">
+					<image class="teacherImage" src="{{item.image}}" mode="scaleToFill" />
+					<view class="teacherTitle">
+						<text style="color:#333333">{{item.title}}</text>
+						<text style="color:#FF7128">{{item.type}}</text>
+					</view>
+					<view class="teacher">{{item.detail}}</view>
 				</view>
 			</view>
 		</swiper-item>
@@ -85,7 +90,9 @@
 
 <!-- 自助服务 -->
 <view class="self-service-title">
-	<view class="titleDynaimc">自助服务</view>
+	<view class="titleDynaimc">
+		<image id="iconImage" src="/image/good.png"></image>自助服务
+	</view>
 </view>
 <view class="line">
 	<!-- 分割线 -->

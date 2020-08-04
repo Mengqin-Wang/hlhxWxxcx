@@ -106,8 +106,12 @@ Page {
   font-weight: bold;
   line-height: 60rpx;
   color: rgba(51, 51, 51, 1);
-  border-left: solid 12rpx rgba(255, 113, 40, 1);
-  padding-left: 40rpx;
+}
+
+#iconImage{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 18rpx;
 }
 
 .recentDynaimc text {
@@ -205,7 +209,7 @@ Page {
   border-radius: 20rpx;
   flex-direction: column;
   /* box-shadow: 0rpx 12rpx 8rpx -12rpx #000; */
-  box-shadow:2rpx 2rpx 5rpx gray;
+  box-shadow: 2rpx 2rpx 5rpx gray;
 }
 
 .teacherborder {
