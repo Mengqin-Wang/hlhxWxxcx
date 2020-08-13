@@ -18,23 +18,20 @@ Page({
         name:"已完成"
        }],
 
-
-
-
       "personal_function" :[{
-        fun_url:"/pages/Myregistration/Myregistration",
+        fun_url:"/pages/myregistration/myregistration",
         name:"我的报名",
         imgUrl:"/image/Myregistration.png"
     },{
-        fun_url:"/pages/detail/detail",
+        fun_url:"/pages/myfocus/myfocus",
         name:"我的关注",
         imgUrl:"/image/mineFocus.png"
   },{
-        fun_url:"/pages/detail/detail",
+        fun_url:"/pages/myfavorite/myfavorite",
         name:"我的收藏",
         imgUrl:"/image/Myregistration.png"
   },{
-        fun_url:"/pages/detail/detail",
+        fun_url:"/pages/myinvitation/myinvitation",
         name:"我的邀请",
         imgUrl:"/image/mineInvitation.png"
   },{
@@ -42,6 +39,23 @@ Page({
         name:"意见反馈",
         imgUrl:"/image/mineFeedback.png"
 }]
+  },
+
+  chooseFun:function (e){
+    var that = this
+    console.log(e)//打印数据
+    console.log(e.currentTarget.dataset.id)//打印数据
+    var id = e.currentTarget.dataset.id
+
+    console.log(this.data.three_function)
+
+     wx.navigateTo({
+      url: '/pages/order/order?name=' + that.data.three_function[id].name
+      // success: function (res) { },
+      // fail: function (res) { },
+      // complete: function (res) { },
+    })
+    
   },
 
   onLoad: function() {

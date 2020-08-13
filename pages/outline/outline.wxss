@@ -64,7 +64,7 @@
   background: linear-gradient(90deg, rgba(250, 153, 51, 1) 0%, rgba(251, 123, 45, 1) 100%);
   width: 80%;
   height: 80rpx;
-  font-size: 40rpx;
+  font-size: 32rpx;
   font-family: Source Han Sans CN;
   font-weight: 400;
   line-height: 50rpx;

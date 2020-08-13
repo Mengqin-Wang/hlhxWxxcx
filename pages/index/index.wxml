@@ -17,19 +17,8 @@
 	</navigator>
 </view>
 
-<!-- 咨询快报 -->
-<view class="consult">
-	<image class="consultIcon" src="../../image/consult.png"></image>
-	<swiper vertical autoplay interval="{{interval}}" duration="{{duration}}" circular class="dynaimcList">
-		<swiper-item class="consultItem" wx:for="{{dynamicList}}" wx:for-item="item" wx:key="id" data-id="{{item.id}}" bindtap="DynamicDetail">
-			<view class="dynaimcTitle">{{item.title}}</view>
-		</swiper-item>
-	</swiper>
-</view>
-
 <!-- 最新动态 -->
 <view class="recentDynaimc">
-
 	<view class="titleDynaimc">
 		<image id="iconImage" src="/image/good.png"></image>最新动态
 	</view>
@@ -72,7 +61,7 @@
 </view>
 <!-- 老师列表 -->
 <view class="teacherList">
-	<swiper autoplay interval="{{interval}}" duration="{{duration}}" circular previous-margin="0rpx" next-margin="150rpx" class="teacherSwiper">
+	<swiper autoplay interval="{{interval}}" duration="{{duration}}" circular display-multiple-items="2.5" previous-margin="0rpx" next-margin="0rpx" class="teacherSwiper">
 		<swiper-item class="teacherItem" wx:for="{{teacherList}}" wx:for-item="item" wx:key="id" bindtap="teacherDetail" data-id="{{item.id}}">
 			<view class="teacherSwiperItem">
 				<view class="teacherborder">

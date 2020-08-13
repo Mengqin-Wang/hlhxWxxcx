@@ -1,2 +1,15 @@
 <!--pages/exchangeMall/exchangeMall.wxml-->
-<text>pages/exchangeMall/exchangeMall.wxml</text>
+<view class="header">
+  <view wx:for="{{tabList}}" class="{{item.isActive?'active':''}}" wx:key="key" data-id="{{item.id}}" bindtap="headerItemTap">{{item.name}}</view>
+</view>
+
+<view wx:for="{{List}}" wx:key="key" class="item" data-id="{{index}}" bindtap="detail">
+  <image src="{{item.image}}"></image>
+  <view class="detail">
+    <view class="itemTitle">{{item.title}}</view>
+    <view class="dateBtn">
+      <view class="date">{{item.date}}</view>
+      <view catchtap="SignUp" class="btn" data-id="{{index}}">立即报名</view>
+    </view>
+  </view>
+</view>

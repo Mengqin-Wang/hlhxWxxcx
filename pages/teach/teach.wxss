@@ -11,7 +11,7 @@ Page {
   background-color: white;
   border-radius: 10rpx;
   width: 90%;
-  height: 360rpx;
+  height: 320rpx;
   margin: 40rpx 5%;
   display: flex;
   flex-direction: row;
@@ -32,7 +32,7 @@ Page {
 }
 
 .teacherName {
-  font-size: 36rpx;
+  font-size: 32rpx;
   font-family: Source Han Sans CN;
   font-weight: bold;
   line-height: 60rpx;
@@ -40,7 +40,7 @@ Page {
 }
 
 .teacherType {
-  font-size: 24rpx;
+  font-size: 20rpx;
   font-family: Source Han Sans CN;
   font-weight: bold;
   line-height: 60rpx;

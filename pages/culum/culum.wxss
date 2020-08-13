@@ -1,5 +1,10 @@
 /* pages/culum/culum.wxss */
+Page{
+  background-color: #E8E8E8;
+}
+
 .headerTab {
+  background-color: white;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -10,6 +15,7 @@
   font-weight: 400;
   line-height: 80rpx;
   color: rgba(53, 53, 53, 1);
+  margin-bottom: 40rpx;
 }
 
 .active {

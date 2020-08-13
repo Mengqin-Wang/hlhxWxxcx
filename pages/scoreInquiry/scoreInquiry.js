@@ -1,13 +1,45 @@
-// pages/scoreInquiry/scoreInquiry.js
+// pages/form2/form2.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    selectArray: [{
+      "id": "1",
+      "text": "1类"
+    }, {
+      "id": "2",
+      "text": "2类"
+    }],
+    name: "",
+    profession: "",
+    rank: "",
+    idCard: "",
+    textId: "",
+    phone: "",
+    id: 0
   },
-
+  getDate: function (e) {
+    this.setData({
+      id: e.detail.id
+    })
+  },
+  formSubmit: function (e) {
+    let result = e.detail.value;
+    if (result.name == "" || result.profession == "" || result.rank == "" || result.idCard == "" || result.textId == "" || result.phone == "" || result.id == 0) {
+      wx.showModal({
+        title: '提示',
+        content: '请输入完整信息'
+      })
+    } else {
+      result.id = this.data.id
+      console.log('form发生了submit事件，携带数据为：', result);
+      wx.navigateTo({
+        url: '/pages/scoreInquiryResult/scoreInquiryResult',
+      })
+    }
+  },
   /**
    * 生命周期函数--监听页面加载
    */

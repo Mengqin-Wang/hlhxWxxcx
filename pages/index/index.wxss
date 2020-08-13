@@ -50,41 +50,11 @@ Page {
   font-family: Source Han Sans CN;
   text-align: center;
   color: #333;
-}
-
-.consult {
-  width: 100%;
-  height: 60rpx;
-  background-color: white;
-  border-bottom-left-radius: 30rpx;
-  border-bottom-right-radius: 30rpx;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.consultIcon {
-  margin-left: 20rpx;
-  width: 280rpx;
-  height: 50rpx;
-}
-
-.dynaimcList {
-  width: 400rpx;
-  height: 40rpx;
-  margin-left: 20rpx;
-}
-
-.dynaimcTitle {
-  width: 400rpx;
   font-size: 28rpx;
-  font-family: Source Han Sans CN;
-  line-height: 40rpx;
-  color: rgba(136, 136, 136, 1);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
+
+
+
 
 .recentDynaimc {
   margin-top: 30rpx;
@@ -101,7 +71,7 @@ Page {
 }
 
 .titleDynaimc {
-  font-size: 40rpx;
+  font-size: 34rpx;
   font-family: Source Han Sans CN;
   font-weight: bold;
   line-height: 60rpx;
@@ -193,17 +163,17 @@ Page {
 .teacherList {
   width: 100%;
   background-color: white;
-  height: 630rpx;
+  height: 430rpx;
 }
 
 .teacherSwiper {
   width: 100%;
-  height: 630rpx;
+  height: 430rpx;
 }
 
 .teacherSwiperItem {
   width: 90%;
-  height: 610rpx;
+  height: 410rpx;
   display: flex;
   background-color: white;
   border-radius: 20rpx;
@@ -223,7 +193,7 @@ Page {
 }
 
 .teacherImage {
-  height: 450rpx;
+  height: 350rpx;
   width: 100%;
   border-top-left-radius: 20rpx;
   border-top-right-radius: 20rpx;

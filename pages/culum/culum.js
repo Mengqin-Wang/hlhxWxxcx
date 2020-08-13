@@ -2,12 +2,23 @@
 import { request } from "../../utils/http.js" 
 import snyc from "../../utils/sync.js"
 Page({
-
+ 
   /**
    * 页面的初始数据
    */
   data: {
-    tabList:[],
+    tabList:[{
+      title:"全部",
+      isActive:true
+    },
+    {
+      title:"美术"
+    },
+    {
+      title:"手工"
+    },{
+      title:"书法"
+    }],
     culumList:""
   },
 
@@ -15,14 +26,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    request({url:"wx/api/kindAll"}).then((res)=>{
-      res.data.data.map((item,index)=>{
-        if(index==0){item.isActive = true}else{item.isActive = false}})
-        console.log(res.data.data)
-        this.setData({
-          tabList:res.data.data
-        })
-      }),
       request({url:"wx/api/type",data:{type:0},
       header:{
         'context-type': 'application/json',

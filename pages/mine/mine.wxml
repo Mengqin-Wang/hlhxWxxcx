@@ -33,14 +33,12 @@
 
 	<view>
 		<view class="threeFunction">
-			<block wx:for="{{three_function}}" wx:for-index="index" wx:key="key">
-				<navigator url="{{item.fun_url}}">
+			<view wx:for="{{three_function}}" data-id='{{index}}' wx:key="key" bindtap="chooseFun">
 					<view class="threeFunItem">
 						<image src="{{item.image}}"></image>
 						{{item.name}}
 					</view>
-				</navigator>
-			</block>
+			</view>
 		</view>
 	</view>
 
@@ -55,7 +53,6 @@
 						{{item.name}}
 							<image class="right" src="/image/right.png"></image>
 					</view>
-				
 				</navigator>
 			</view>
 		</block>

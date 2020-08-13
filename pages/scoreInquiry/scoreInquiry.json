@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Select": "/component/select/select"
+  },
+  "navigationBarTitleText": "成绩查询"
 }

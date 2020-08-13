@@ -1,14 +1,41 @@
 {
   "pages": [
+    "pages/teacher/teacher",
+    "pages/confirmOrder/confirmOrder",
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/mine/mine",
-    "pages/exchangeMall/exchangeMall",
-    "pages/culum/culum",
+    "pages/registerTestFirst/registerTestFirst",
+    "pages/introduction/introduction",
+    "pages/elegant/elegant",
     "pages/teach/teach",
+    "pages/exchangeMall/exchangeMall",
+    "pages/registrationSuccess/registrationSuccess",
+    "pages/institutional/institutional",
+    "pages/scoreInquiryFail/scoreInquiryFail",
+    "pages/scoreInquiryResult/scoreInquiryResult",
+    "pages/unpaid/unpaid",
+    "pages/mine/mine",
+    "pages/myinvitation2/myinvitation2",
+    "pages/myinvitation/myinvitation",
+    "pages/pointsdetail/pointsdetail",
+    "pages/recentNews/recentNews",
+    "pages/examineeStyle/examineeStyle",
+   
+    "pages/scoreInquiry/scoreInquiry",
+    "pages/logs/logs",
+    "pages/culum/culum",
     "pages/outline/outline",
     "pages/outlineDetail/outlineDetail",
-    "pages/scoreInquiry/scoreInquiry"
+    "pages/agencyList/agencyList",
+    "pages/pointsmall/pointsmall",
+    "pages/myfavorite/myfavorite",
+    "pages/myfocus/myfocus",
+    "pages/myregistration/myregistration",
+    "pages/pointsrecord/pointsrecord",
+    "pages/order/order",
+    "pages/exchange/exchange",
+    "pages/registerTestSecond/registerTestSecond",
+    "pages/skipExplain/skipExplain",
+    "pages/activityRegistration/activityRegistration"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -19,7 +46,8 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "selectedColor": "#31CABE",
+    "color": "#8F8F94",
+    "selectedColor": "#FF7F34",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -31,7 +59,7 @@
         "pagePath": "pages/exchangeMall/exchangeMall",
         "iconPath": "image/tabbar/agency_empty.png",
         "selectedIconPath": "image/tabbar/agency_full.png",
-        "text": "兑换商城"
+        "text": "考级"
       },
       {
         "pagePath": "pages/mine/mine",

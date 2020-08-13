@@ -1,1 +1,75 @@
-/* pages/scoreInquiry/scoreInquiry.wxss */
+/* pages/form2/form2.wxss */
+form{
+  width: 100%;
+}
+
+.type {
+  width: 90%;
+  margin-left: 5%;
+  height: 200rpx;
+}
+
+.selectType {
+  background-color: #F4F4F4;
+  height: 100rpx;
+  border-radius: 14rpx;
+}
+
+.exclass {
+  background-color: #F4F4F4 !important;
+  line-height: 120rpx !important;
+  font-size: 30rpx !important;
+  color: #B9B9B9 !important;
+  border-radius: 12rpx;
+}
+
+.exclass image {
+  top: 50rpx;
+  right: 20rpx;
+}
+
+.typeName {
+  line-height: 60rpx;
+  letter-spacing: 5rpx;
+}
+
+.typeName text {
+  color: #FF7F34;
+  margin-right: 20rpx;
+}
+
+.selectName {
+  background-color: #F4F4F4;
+  height: 120rpx;
+  border-radius: 14rpx;
+  font-size: 30rpx;
+}
+
+.nameInput {
+  /* text-indent: 10rpx; */
+  height: 120rpx;
+  color: #B9B9B9;
+  text-indent: 20rpx;
+}
+
+.submitBtn {
+  /* width: 100%; */
+  margin:50rpx auto;
+  height: 100rpx;
+  background: linear-gradient(90deg, rgba(250, 153, 51, 1) 0%, rgba(251, 123, 45, 1) 100%);
+  opacity: 1;
+  font-size: 32rpx;
+  line-height: 80rpx;
+  border-radius: 50rpx;
+  color: white;
+}
+
+button{
+  size: default;
+  width: 90% !important;
+}
+  
+
+.phClass{
+  color: #B9B9B9;
+}
