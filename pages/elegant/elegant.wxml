@@ -1,0 +1,19 @@
+<view  class="elegant_box">
+     <!-- 头部 -->
+    <view class="box_item">
+    <!-- 学生风采的标题 -->
+       <view class="item_title">
+         {{title}}
+       </view>
+       <!-- 标题的日期 -->
+       <view class="item_date">
+          {{date}}
+       </view>
+    </view>
+    <!--中部 图片显示 -->
+     <view class="box_image">
+         <view class="image_item" wx:for="{{images}}" wx:for-item="item" wx:key="imgUrl">
+             <image src="{{item.imgUrl}}"></image>
+         </view>
+     </view>  
+</view>

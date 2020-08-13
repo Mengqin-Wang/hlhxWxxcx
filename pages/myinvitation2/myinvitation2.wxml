@@ -1,0 +1,15 @@
+<!--pages/myinvitation2/myinvitation2.wxml-->
+
+<view class="header">
+  <view class="headerItem {{tab==0?'active':'notactive'}}" data-id="{{tab}}" data-index="{{index}}" bindtap="exchange">我推荐的人</view>
+  <view class="headerItem {{tab==1?'active':'notactive'}}" data-id="{{tab}}" data-index="{{index}}" bindtap="exchange2">邀请购买积分</view>
+</view>
+
+<view class="item" wx:for="{{List}}" wx:key="key"> 
+  <image src="{{item.image}}"></image>
+  <view class="name">
+    <view class="name1">{{item.name}}</view>
+    <view class="date">{{item.date}}</view>
+  </view>
+  <view class="num">{{item.num}}</view>
+</view>

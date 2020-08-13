@@ -1,0 +1,27 @@
+/* pages/elegant.wxss */
+.elegant_box{
+  background:rgba(255,255,255,1);
+  padding:20rpx 26rpx;
+}
+.box_item{
+  width: 100%;
+  height: 230rpx;
+}
+.item_title{
+  font-size:bold;
+}
+.item_date{
+  color:rgba(178,178,178,1);
+  opacity:1;
+  margin-top: 40rpx;
+  font-size: 400;
+}
+.image_item{
+  padding-top: 20rpx;
+  width: 702rpx;
+  height: 440rpx;
+}
+.image_item image{
+  width: 100%;
+  height: 100%;
+}

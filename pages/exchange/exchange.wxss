@@ -1,0 +1,164 @@
+/* pages/exchange.wxss */
+.page {
+  background: rgba(244, 244, 244, 1);
+}
+
+.top_banner {
+  margin-top: 0;
+  width: 100%;
+  height: 400rpx;
+}
+
+.top_banner swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.top_banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.text_box {
+  padding: 20rpx 24rpx;
+}
+
+.top_text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text_title {
+  height: 50rpx;
+  font-weight: bold;
+  font-size: 36rpx;
+  line-height: 50rpx;
+}
+
+.text_num {
+  font-size: 36rpx;
+  color: rgba(185, 185, 185, 1);
+}
+
+.mid_text {
+  height: 150rpx;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  line-height: 150rpx;
+}
+
+.mid_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.mid_img {
+  width: 30rpx;
+  height: 30rpx;
+  position: relative;
+  top: 12rpx;
+}
+
+.mid_img image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.mid_price {
+  margin-left: 20rpx;
+  font-size: 52rpx;
+  font-weight: bold;
+  color: rgba(255, 113, 40, 1);
+}
+
+.mid_dis {
+  position: relative;
+  top: 12rpx;
+  margin-left: 20rpx;
+  font-size: 35rpx;
+  color: rgba(185, 185, 185, 1);
+  text-decoration: line-through;
+}
+
+.right_img {
+  margin-top: 12rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.right_img image {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_box {
+  padding: 20rpx 24rpx;
+}
+
+.foot_text {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.foot_detail {
+  margin-top: 20rpx;
+}
+
+
+
+.footer {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
+
+.index {
+  margin-left: 24rpx;
+  width: 50rpx;
+  font-size: 20rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+}
+
+.index image {
+  margin-top: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.contact {
+  margin-left: 66rpx;
+  width: 50rpx;
+  font-size: 20rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  /* line-height: 50rpx; */
+  color: rgba(51, 51, 51, 1);
+}
+
+.contact image {
+  margin-top: 10rpx;
+  width: 40rpx;
+  height: 40rpx;
+  /* line-height: 50rpx; */
+}
+
+.detail {
+  margin-left: 30rpx;
+  width: 480rpx;
+  height: 90rpx;
+  background: linear-gradient(90deg, rgba(250, 153, 51, 1) 0%, rgba(251, 123, 45, 1) 100%);
+  opacity: 1;
+  border-radius: 44rpx;
+  text-align: center;
+  color: white;
+  line-height: 90rpx;
+}

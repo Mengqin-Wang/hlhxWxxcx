@@ -1,0 +1,8 @@
+<!--pages/scoreInquiryFail/scoreInquiryFail.wxml-->
+
+<view class="main">
+  <image src="/image/Fail.png"></image>
+  <view class="FailTitle">查询失败</view>
+  <view class="FailDetail">抱歉，未到成绩公布时间暂时无法查询，等耐心等待。</view>
+  <view class="btn" bindtap="IKown" open-type="switchTab">我知道了</view>
+</view>

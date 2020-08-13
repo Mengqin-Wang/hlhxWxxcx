@@ -1,0 +1,16 @@
+<!--pages/myfavorite/myfavorite.wxml-->
+
+<view class="goodList">
+  <view class="goodItem" wx:for="{{List}}" wx:key="key">
+    <image src="{{item.image}}"></image>
+    <view class="detail">
+      <view class="goodName">{{item.title}}</view>
+      <view class="goodType">{{item.type}}</view>
+      <view class="Price">
+        <view class="goodPrice">￥{{item.price}}</view>
+        <view class="goodDiscount" wx:if="{{item.discount}}">￥{{item.discount}}</view>
+        <view class="goodNum">{{item.num}}人在学</view>
+      </view>
+    </view>
+  </view>
+</view>

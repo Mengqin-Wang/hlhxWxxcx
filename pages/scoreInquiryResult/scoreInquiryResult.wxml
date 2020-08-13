@@ -1,0 +1,34 @@
+<!--pages/scoreInquiryResult/scoreInquiryResult.wxml-->
+<view class="table header">
+  <view class="tableView1 tableName">姓名</view>
+  <view class="tableView2 tableContainer">{{name}}</view>
+  <view class="tableView1 tableName">专业</view>
+  <view class="tableView2 tableContainer2">{{major}}</view>
+</view>
+
+<view class="table">
+  <view class="tableView1 tableName">准考证号</view>
+  <view class="tableView2 tableContainer">{{examCode}}</view>
+  <view class="tableView1 tableName">级别</view>
+  <view class="tableView2 tableContainer2">{{level}}</view>
+</view>
+
+<view class="table">
+  <view class="tableView1 tableName">联系电话</view>
+  <view class="tableView2 tableContainer3">{{phone}}</view>
+</view>
+
+<view class="table">
+  <view class="tableView1 tableName">身份证号</view>
+  <view class="tableView2 tableContainer3">{{IDcode}}</view>
+</view>
+
+<view class="table table2">
+  <view class="tableView1 tableName2">老师评价</view>
+  <view class="tableView3"><text>{{teacher}}</text></view>
+</view>
+
+<view class="table table2">
+  <view class="tableView1 tableName2">学生作品</view>
+  <view class="tableView3"><text>{{studentWork}}</text></view>
+</view>

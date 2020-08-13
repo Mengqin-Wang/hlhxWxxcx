@@ -1,0 +1,43 @@
+<!--pages/teacher/teacher.wxml-->
+<view class="intro">
+	<view class="header">
+		<image src="/image/1.png"></image>
+		<view class="title">
+			<view class="name">何欢</view>
+			<view class="teach">钢琴老师</view>
+		</view>
+
+		<view class="btn Attention" wx:if="{{isAttention}}" data-id="{{teacher.id}}" data-flg="{{isAttention}}" bindtap="changAttention">已关注</view>
+		<view class="btn" wx:else data-id="{{teacher.id}}" data-flg="{{isAttention}}" bindtap="changAttention">+关注</view>
+
+	</view>
+
+	<view class="msg">简介：仁才培训中心语文名师，语文高级教师，教研组长。从教三十余载，二十多年名校高三把关。能够精准把握北京语文高考命题规律，精通现代文、文言文、诗词、写作教学，在多年的教学实践中形成自己独特的教学风格与教育思想。</view>
+</view>
+
+<view class="headerTab">
+	<view wx:for="{{tabList}}" wx:for-item="item" wx:key="id" bindtap="hanldeItemTab" data-index="{{index}}" data-id="{{item.id}}" class="{{item.isActive?'active':''}}">
+		<text>{{item.title}}</text>
+	</view>
+</view>
+
+<view class="Major" wx:if="{{isMajor}}">
+	<block wx:for="{{culumList}}" wx:for-item="item" wx:key="id">
+		<view class="majorItem">
+			<image src="/image/banner_1.PNG"></image>
+			<view class="MajorTitle">{{item.title}}</view>
+			<view class="price">
+				<text class="price1">￥{{item.price}}</text>
+				<text class="discount" wx:if="{{item.discount}}">￥{{item.discount}}</text>
+				<text class="num">{{item.num}}人在学</text>
+			</view>
+		</view>
+	</block>
+</view>
+<view wx:else>
+	<view class="WorkImg">
+		<li class="item" wx:for="{{culumList}}">
+			<image src="{{item.image}}"></image>
+		</li>
+	</view>
+</view>

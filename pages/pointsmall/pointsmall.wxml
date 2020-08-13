@@ -1,0 +1,32 @@
+<!--pages/pointsmall/pointsmall.wxml-->
+<view class="header">
+	<view class="headerItem">
+		<view class="sum">{{sum}}</view>
+		<view class="name">可用积分</view>
+	</view>
+	<view>
+		<navigator url="/pages/pointsdetail/pointsdetail" class="headerItem">
+			<image src="/image/Creditdetails.png"></image>
+			<view class="name">积分明细</view>
+		</navigator>
+	</view>
+	<view>
+		<navigator url="/pages/pointsrecord/pointsrecord" class="headerItem"> 
+			<image src="/image/Exchangerecords.png"></image>
+			<view class="name">兑换记录</view>
+		</navigator>
+	</view>
+</view>
+
+<view class="main">
+	<view class="title">兑换好物</view>
+	<view class="hr"></view>
+	<view class="goodList">
+		<view wx:for="{{List}}" wx:key="key" class="goodItem">
+			<image src="{{item.image}}"></image>
+			<view class="goodTitle">{{item.title}}</view>
+			<view class="need">{{item.need}}积分</view>
+			<view class="btn" bindtap="exchange">立即兑换</view>
+		</view>
+	</view>
+</view>

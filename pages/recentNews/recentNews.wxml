@@ -1,0 +1,8 @@
+<!--pages/recentNews/recentNews.wxml-->
+<view class="dynamic">
+	<view class="main" wx:for="{{dynamic}}" wx:for-item="item" wx:key="id">
+		<image src="{{item.image}}"></image>
+		<view class="data">{{item.data}}</view>
+		<view class="title">{{item.title}}</view>
+	</view>
+</view>

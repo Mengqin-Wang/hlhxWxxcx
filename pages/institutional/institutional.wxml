@@ -1,0 +1,78 @@
+<!--pages/institutional/institutional.wxml-->
+<view wx:if="{{filtrate==false}}">
+	<view class="header">
+		<view class="header1">
+			<image class="img1" src="{{image}}"></image>
+      <navigator class="nav" url="{{url}}">
+			<view class="name">{{name}}</view>
+			<image class="img2" src="/image/right.png"></image>
+      </navigator>
+			<image class="img3" src="/image/phone2.png"></image>
+		</view>
+		<view class="hr"></view>
+		<view class="address">
+			<image class="addressIcon" src="/image/address.png"></image>
+			<view class="addressTitle">{{address}}</view>
+			<view class="distance">{{distance}}</view>
+		</view>
+		<view class="clock">
+			<image class="addressIcon" src="/image/clock.png"></image>
+			<view class="time">{{time}}</view>
+		</view>
+	</view>
+
+	<view class="goodHead">
+		<view class="goodTitle">商品列表</view>
+		<view class="goodfun fun1">综合</view>
+		<view class="goodfun fun2">销量</view>
+		<view class="goodFun3" catchtap="filtrate">
+			<view class="goodfun fun3">筛选</view>
+			<image src="/image/shaixuan.png"></image>
+		</view>
+	</view>
+
+	<view class="goodList">
+		<view class="goodItem" wx:for="{{goodList}}" wx:key="key">
+			<image src="{{item.image}}"></image>
+			<view class="detail">
+				<view class="goodName">{{item.title}}</view>
+				<view class="goodType">{{item.type}}</view>
+				<view class="Price">
+					<view class="goodPrice">￥{{item.price}}</view>
+					<view class="goodDiscount" wx:if="{{item.discount}}">￥{{item.discount}}</view>
+					<view class="goodNum">{{item.num}}人在学</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
+<view wx:if="{{filtrate==true}}" class="filtrate fadein">
+	<view class="filtrateList1"></view>
+	<view class="filtrateList2"></view>
+	<view class="filtrateList3">
+		<view class="filtrateHeader">筛选</view>
+		<view class="courseClass">
+			<view class="ClassTitle">课程分类</view>
+			<view class="ClassSet">
+				<view class="ClassItem {{item.isActive?'active':''}}" wx:for="{{classList}}" data-id="{{item.id}}" wx:key="key" catchtap="chooseClass">
+					{{item.name}}
+				</view>
+			</view>
+
+			<view class="block"></view>
+			<view class="ClassTitle">文具、工具分类</view>
+			<view class="ClassSet">
+				<view class="ClassItem {{item.isActive?'active':''}}" wx:for="{{toolList}}" data-id="{{item.id}}" wx:key="key" catchtap="chooseTool">
+					{{item.name}}
+				</view>
+			</view>
+
+      <view class="btn">
+        <view class="btn1 reset" catchtap="reset">重置</view>
+        <view class="btn1 confirm" catchtap="confirm">确定</view>
+      </view>
+
+		</view>
+	</view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/examineeStyle/examineeStyle.wxml-->
+
+<view wx:for="{{List}}" wx:key="key">
+	<block wx:if="{{item.type==1}}">
+		<navigator url="{{item.url}}" class="type1">
+			<view class="title">{{item.title}}</view>
+			<view class="Imgtype1">
+				<image src="{{item.image1}}"></image>
+				<image src="{{item.image2}}"></image>
+				<image src="{{item.image3}}"></image>
+			</view>
+			<view class="date">{{item.date}}</view>
+			<view class="hr"></view>
+		</navigator>
+	</block>
+	<block wx:elif="{{item.type==2}}">
+		<navigator url="{{item.url}}" class="type1">
+			<view class="title">{{item.title}}</view>
+			<view class="date">{{item.date}}</view>
+			<view class="hr"></view>
+		</navigator>
+	</block>
+	<block wx:else>
+		<navigator url="{{item.url}}" class="type1">
+			<view class="title">{{item.title}}</view>
+			<view class="Imgtype3">
+				<image src="{{item.image1}}"></image>
+			</view>
+			<view class="date">{{item.date}}</view>
+			<view class="hr"></view>
+		</navigator>
+	</block>
+</view>

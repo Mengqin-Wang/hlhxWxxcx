@@ -1,0 +1,11 @@
+<!--pages/myfocus/myfocus.wxml-->
+
+<view wx:for="{{List}}" wx:key="key" class="item">
+  <image src="{{item.image}}"></image>
+  <view class="name">
+    <view class="name1">{{item.name}}</view>
+    <view class="teach">主授：{{item.teach}}</view>
+  </view>
+  <view wx:if="{{item.myFocus==0}}" data-id="{{item.id}}" data-index="{{index}}" class="focu" bindtap="changeFocu">已关注</view>
+  <view wx:else="{{item.myFocus==1}}" class="focu type2" data-id="{{item.id}}" data-index="{{index}}" bindtap="changeFocu">关注</view>
+</view>

@@ -1,0 +1,13 @@
+<!--pages/myregistration/myregistration.wxml-->
+<view wx:for="{{List}}" wx:key="id" class="listItem" data-id="{{item.type}}" wx:for-item="item" data-index="{{index}}" bindtap="bindType"> 
+  <image src="{{item.image}}"></image>
+  <view class="main">
+    <view class="title">{{item.title}}</view>
+      <view class="dateTime">
+        <view class="date">{{item.date}}</view>
+        <view class="type orange" wx:if="{{item.type==1}}">已报名</view>
+        <view class="type type2" wx:elif="{{item.type==2}}">活动结束</view>
+        <view class="type orange" wx:elif="{{item.type==3}}">审核中</view>
+      </view>
+  </view>
+</view>

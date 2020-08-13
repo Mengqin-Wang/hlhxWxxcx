@@ -1,0 +1,54 @@
+/* pages/myfocus/myfocus.wxss */
+
+.item {
+  width: 94%;
+  height: 180rpx;
+  margin-left: 3%;
+  border-bottom: 2rpx solid #F4F4F4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin:0 30rpx;
+}
+
+.name1 {
+  font-size: 32rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 48rpx;
+  color: rgba(17, 17, 17, 1);
+}
+
+.teach {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 48rpx;
+  color: rgba(153, 153, 153, 1);
+}
+
+.focu {
+  width: 150rpx;
+  height: 60rpx;
+  border: 2rpx solid rgba(251, 123, 45, 1);
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 60rpx;
+  text-align: center;
+  color: rgba(251, 123, 45, 1);
+  position: absolute;
+  right: 30rpx;
+}
+
+.type2{
+  color:rgba(178,178,178,1) !important;
+  border:1px solid rgba(244,244,244,1) !important;
+}

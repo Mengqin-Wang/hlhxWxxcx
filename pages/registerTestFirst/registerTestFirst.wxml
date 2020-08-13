@@ -1,0 +1,56 @@
+<!--pages/registerTestFirst/registerTestFirst.wxml-->
+<view class="header">
+	<view class="item">
+		<view class="circle active">1</view>
+		<view class="text activeText">填写信息</view>
+	</view>
+	<view class="line"></view>
+	<view class="item">
+		<view class="circle">2</view>
+		<view class="text">报名缴费</view>
+	</view>
+	<view class="line"></view>
+	<view class="item">
+		<view class="circle">3</view>
+		<view class="text">报名成功</view>
+	</view>
+</view>
+
+
+<form bindsubmit="formSubmit">
+	<view class="type">
+		<view class="typeName"><text>*</text>姓名</view>
+		<view class="selectName">
+			<input placeholder-class="phClass" name="name" class="nameInput" placeholder="请输入您的姓名" />
+		</view>
+	</view>
+	<view class="type">
+		<view class="typeName"><text>*</text>身份证号码</view>
+		<view class="selectName">
+			<input placeholder-class="phClass" name="idCard" class="nameInput" placeholder="请输入您的身份证号码" />
+		</view>
+	</view>
+	<view class="type">
+		<view class="typeName"><text>*</text>联系电话</view>
+		<view class="selectName">
+			<input placeholder-class="phClass" name="phone" class="nameInput" placeholder="请输入您的手机号码" />
+		</view>
+	</view>
+	<view class="type">
+		<view class="typeName"><text>*</text>专业</view>
+		<view class="selectName">
+			<input placeholder-class="phClass" name="major" class="nameInput" placeholder="请输入您需要报名的专业" />
+		</view>
+	</view>
+	<view class="type">
+		<view class="typeName"><text>*</text>级别</view>
+		<view class="selectName">
+			<input placeholder-class="phClass" name="level" class="nameInput" placeholder="请输入您报名专业相应的级别"/>
+		</view>
+	</view>
+
+	<view class="type">
+		<button class="submitBtn" formType="submit">下一步</button>
+	</view>
+
+</form>

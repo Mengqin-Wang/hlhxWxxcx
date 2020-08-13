@@ -1,0 +1,385 @@
+/* pages/institutional/institutional.wxss */
+Page {
+  background-color: #F4F4F4;
+}
+
+.header {
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40rpx;
+  padding: 30rpx 3%;
+  border-radius: 20rpx;
+  background-color: white;
+}
+
+.header1 {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img1 {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+}
+
+.img2 {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.img3 {
+  width: 50rpx;
+  height: 50rpx;
+  position: absolute;
+  right: 3%;
+}
+
+.name {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 30rpx;
+}
+
+.hr {
+  width: 100%;
+  height: 2rpx;
+  background-color: #F4F4F4;
+}
+
+.address {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.addressIcon {
+  width: 44rpx;
+  height: 44rpx;
+  margin-right: 16rpx;
+}
+
+.addressTitle {
+  font-size: 28rpx;
+  width: 75%;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(53, 53, 53, 1);
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.distance {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(251, 123, 45, 1);
+  position: absolute;
+  right: 3%;
+}
+
+.clock {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.time {
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+}
+
+.goodHead {
+  margin-top: 30rpx;
+  width: 94%;
+  padding: 0 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120rpx;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  background-color: white;
+}
+
+.goodHead image {
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  right: 3%;
+}
+
+.goodTitle {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: bold;
+  color: rgba(53, 53, 53, 1);
+}
+
+.goodfun {
+  font-size: 24rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(53, 53, 53, 1);
+}
+
+.goodFun3 {
+  display: flex;
+  align-items: center;
+}
+
+.fun1 {
+  position: absolute;
+  right: 30%;
+}
+
+.fun2 {
+  position: absolute;
+  right: 20%;
+}
+
+.fun3 {
+  position: absolute;
+  right: 8%;
+  color: #FF7F34 !important;
+}
+
+.goodList {
+  width: 94%;
+  padding: 0 3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goodItem {
+  width: 100%;
+  height: 240rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 2rpx solid #F4F4F4;
+}
+
+.goodItem image {
+  width: 35%;
+  height: 70%;
+  border-radius: 5rpx;
+}
+
+.detail {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.goodName {
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 50rpx;
+  color: rgba(53, 53, 53, 1);
+}
+
+.goodType {
+  font-size: 26rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  line-height: 40rpx;
+  color: rgba(102, 102, 102, 1);
+}
+
+.Price {
+  display: flex;
+  flex-direction: row;
+  height: 50rpx;
+  align-items: center;
+  align-items: center;
+}
+
+.goodPrice {
+  font-size: 34rpx;
+  font-family: DIN;
+  font-weight: bold;
+  color: rgba(251, 123, 45, 1);
+  margin-right: 30rpx;
+}
+
+.goodDiscount {
+  font-size: 22rpx;
+  font-family: DIN;
+  font-weight: 400;
+  color: rgba(185, 185, 185, 1);
+  text-decoration: line-through;
+  margin-right: 30rpx;
+}
+
+.goodNum {
+  font-size: 22rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  opacity: 0.9;
+}
+
+.fadein {
+  animation: fadein .5s;
+}
+@keyframes fadein {
+  0% {
+      transform: translate(100%, 0);
+  }
+
+  100% {
+      transform: none;
+  }
+}
+
+
+.filtrate {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: wheat;
+  display: flex;
+  flex-direction: row;
+}
+
+.filtrateList1 {
+  width: 15%;
+  height: 100%;
+  background-color: #F4F4F4;
+}
+
+.filtrateList2 {
+  width: 15%;
+  height: 100%;
+  background-color: #797979;
+}
+
+.filtrateList3 {
+  width: 70%;
+  height: 100%;
+  background-color: white;
+}
+
+.filtrateHeader {
+  width: 95%;
+  height: 5%;
+  background-color: #F0F0F0;
+  font-size: 32rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  padding: 15% 0 0 5%;
+  color: rgba(136, 136, 136, 1);
+}
+
+.courseClass {
+  width: 90%;
+  padding: 0 5%;
+  height: 80%;
+  background-color: white;
+}
+
+.block {
+  width: 100%;
+  height: 60rpx;
+}
+
+.ClassTitle {
+  margin: 30rpx 0;
+  font-size: 30rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 500;
+  line-height: 44rpx;
+  color: rgba(51, 51, 51, 1);
+}
+
+.ClassSet {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ClassItem {
+  width: 30%;
+  margin: 20rpx 0;
+  height: 80rpx;
+  background-color: #E4E4E4;
+  color: #888888;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.active {
+  background-color: #FFE8C9;
+  color: #FF7F34;
+}
+
+.btn {
+  width: 84%;
+  margin-left: 16%;
+  margin-top: 100rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 45rpx;
+}
+
+.btn1 {
+  width: 60%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 36rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+}
+
+.reset{
+  background-color: #FFE8C9;
+  color: #FB7B2D;
+  border-top-left-radius: 45rpx;
+  border-bottom-left-radius: 45rpx;
+}
+
+.confirm{
+  background-color: #FB7B2D;
+  color: white;
+  border-top-right-radius: 45rpx;
+  border-bottom-right-radius: 45rpx;
+}

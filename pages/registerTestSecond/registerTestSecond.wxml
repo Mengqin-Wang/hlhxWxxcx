@@ -1,0 +1,51 @@
+<!--pages/registerTestSecond/registerTestSecond.wxml-->
+<view class="header">
+	<view class="item">
+		<view class="circle ">1</view>
+		<view class="text ">填写信息</view>
+	</view>
+	<view class="line"></view>
+	<view class="item">
+		<view class="circle active">2</view>
+		<view class="text activeText">报名缴费</view>
+	</view>
+	<view class="line"></view>
+	<view class="item">
+		<view class="circle">3</view>
+		<view class="text">报名成功</view>
+	</view>
+</view>
+
+<view class="main">
+	<view class="Title">缴费明细</view>
+	<view class="mianItem">
+		<view class="ItemName">专业</view>
+		<view class="ItemContainer">{{major}}</view>
+	</view>
+	<view class="mianItem">
+		<view class="ItemName">级别</view>
+		<view class="ItemContainer">{{level}}</view>
+	</view>
+
+	<view class="mianItem">
+		<view class="ItemName">报名费</view>
+		<view class="ItemContainer monny">￥{{fee}}</view>
+	</view>
+	<view wx:if="{{isSkip}}" class="mianItem">
+		<view class="ItemName">跨级费</view>
+		<navigator url="/pages/skipExplain/skipExplain" class="ItemContainer monny">
+			￥{{skipLevel}}
+			<image src="/image/right.png"></image>
+		</navigator>
+
+	</view>
+	<view wx:if="{{isSkip}}" class="mianItem">
+		<view class="ItemName">总费用</view>
+		<view class="ItemContainer monny">￥{{fee+skipLevel}}</view>
+	</view>
+
+</view>
+
+<view class="type">
+	<button class="submitBtn" bindtap="next">下一步</button>
+</view>

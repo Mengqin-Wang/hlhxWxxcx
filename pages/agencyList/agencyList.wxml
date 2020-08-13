@@ -1,0 +1,24 @@
+<!--pages/agencyList/agencyList.wxml-->
+<view class="container">
+	<view class="agency_list">
+		<view class="agency_item" wx:for="{{list}}" wx:for-item="item" wx:key="id">
+			<view class="item_title flex">
+				<view class="head_img">
+					<image src="{{item.image}}"></image>
+				</view>
+				<view class="agency_info">
+					<view class="agency_name">{{item.organName}}</view>
+					<view class="agency_add">{{item.address}}</view>
+				</view>
+				<view class="into_agency" data-id="{{item.id}}" bindtap="bindShopid">进店</view>
+			</view>
+			<view class="item_swiper">
+          <view class="swiper_title">店铺详情</view>
+          <view class="swiper_box">
+          营业时间:{{item.openTime}}
+          联系电话：{{item.phone}}
+          </view>
+      </view>
+		</view>
+	</view>
+</view>

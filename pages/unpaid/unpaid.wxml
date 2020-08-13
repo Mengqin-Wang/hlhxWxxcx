@@ -1,0 +1,61 @@
+<!--pages/unpaid/unpaid.wxml-->
+<view class="type">{{type}}</view>
+<view class="detail">{{detail}}</view>
+
+<view class="informationClass">
+	<view class="RegistrationTitle">报名信息</view>
+	<view class="ClassMain">
+		<image src="{{image}}"></image>
+		<view>
+			<view class="ClassTitle">{{classTitle}}</view>
+			<view class="ClassPrice">￥{{price}}</view>
+		</view>
+	</view>
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">考试时间</view>
+		<view class="RegistrationNameDetail TestTime">{{time}}</view>
+	</view>
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">报名费</view>
+		<view class="RegistrationNameDetail TestPrice">￥{{price}}</view>
+	</view>
+	<view class="shouldPay">
+		<text class="shouldText">应付：</text>
+		<text class="shouldPrice">￥{{shouldPay}}</text>
+	</view>
+</view>
+
+<view class="informationRegistration">
+	<view class="RegistrationTitle">学员信息</view>
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">姓名</view>
+		<view class="RegistrationNameDetail PersonalName">{{name}}</view>
+	</view>
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">联系电话</view>
+		<view class="RegistrationNameDetail">{{phone}}</view>
+	</view>
+</view>
+
+<view class="informationRegistration">
+	<view class="RegistrationTitle">订单信息</view>
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">订单编号</view>
+		<view class="RegistrationNameDetail PersonalName">{{code}}</view>
+	</view>
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">创建时间</view>
+		<view class="RegistrationNameDetail">{{startTime}}</view>
+	</view>
+
+	<view class="RegistrationDetail">
+		<view class="RegistrationName TestTime">付款时间</view>
+		<view class="RegistrationNameDetail">{{payTime}}</view>
+	</view>
+</view>
+
+<view class="btn">
+	<view wx:if="{{typeid==1}}" class="cancel" bindtap="cancelOrder">取消订单</view>
+	<view wx:if="{{typeid==1}}" class="pay">继续支付</view>
+	<view wx:if="{{typeid==2}}" class="cancel">删除订单</view>
+</view>

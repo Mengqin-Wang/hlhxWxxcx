@@ -1,0 +1,15 @@
+<!--pages/pointsdetail/pointsdetail.wxml-->
+
+<view class="item" wx:for="{{List}}" wx:key="key">
+  <view class="date">{{item.date}}</view>
+  <view class="main">
+    <image src="{{item.image}}"></image>
+    <view class="message">
+      <view class="title">{{item.title}}</view>
+      <view class="need">{{item.need}}积分</view>
+      <view class="code">兑换码:{{item.code}}</view>
+    </view>
+    <view class="type" wx:if="{{item.type==1}}">未领取</view>
+    <view class="type type2" wx:if="{{item.type==2}}">已兑换</view>
+  </view>
+</view>

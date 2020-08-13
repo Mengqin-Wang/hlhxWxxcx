@@ -1,0 +1,29 @@
+<!--pages/order/order.wxml-->
+
+<view class="tabList">
+	<view wx:for="{{tabList}}"  item-id="{{item.id}}" data-index="{{index}}" wx:key="key" bindtap="hanldeItemTab" class="{{item.isActive?'active':''}}">
+	<text>{{item.name}}</text>
+	</view>
+</view>
+<view class="tabWhite"></view>
+
+<view wx:for="{{List}}" wx:key="key" class="item">
+	<view class="dateType">
+		<text>{{item.date}}</text>
+		<view class="{{item.unpay?'paidactive':''}}">{{item.type}}</view>
+	</view>
+	<view class="hr"></view>
+	<view class="main">
+		<image src="{{item.image}}"></image>
+		<view>
+			<view class="name">{{item.title}}</view>
+			<text class="price">￥{{item.price}}</text>
+			<text class="discount">￥{{item.discount}}</text>
+		</view>
+	</view>
+
+	<view wx:if="{{item.unpay==1}}" class="btn">
+		<view class="cancel" bindtap="cancelOrder">取消订单</view>
+		<view class="pay">继续支付</view>
+	</view>
+</view>

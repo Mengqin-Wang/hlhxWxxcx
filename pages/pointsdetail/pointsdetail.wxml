@@ -1,0 +1,11 @@
+<!--pages/pointsrecord/pointsrecord.wxml-->
+
+<view class="main">
+	<view wx:for="{{List}}" wx:key="key" class="item">
+		
+			<text class="name">{{item.type}}</text>
+			<text class="points">{{item.points}}</text>
+		
+		<view class="date">{{item.date}}</view>
+	</view>
+</view>

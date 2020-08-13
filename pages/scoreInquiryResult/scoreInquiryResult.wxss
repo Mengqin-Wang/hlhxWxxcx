@@ -1,0 +1,75 @@
+/* pages/scoreInquiryResult/scoreInquiryResult.wxss */
+.table {
+  width: 94%;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header{
+  margin-top: 20rpx;
+}
+
+.tableView1 {
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #F4F4F4;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: rgba(53, 53, 53, 1);
+  border: 2rpx solid #E4E4E4;
+}
+
+.tableName{
+  width: 20%;
+}
+.tableContainer{
+  width: 37%;
+}
+
+.tableContainer2{
+  width: 22%;
+}
+
+.tableView2{
+  text-align: center;
+  line-height: 100rpx;
+  background-color: white;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #888888;
+  border: 2rpx solid #E4E4E4;
+}
+
+.tableContainer3{
+  width: 80%;
+}
+
+.table2{
+  height: 500rpx;
+}
+
+.tableName2{
+  line-height: 500rpx;
+  height: 500prx;
+  width: 20%;
+}
+
+.tableView3{
+  text-align: left;
+  padding: 0 3%;
+  height: 500rpx;
+  width: 74%;
+  line-height: 80rpx;
+  background-color: white;
+  font-size: 28rpx;
+  font-family: Source Han Sans CN;
+  font-weight: 400;
+  color: #888888;
+  border: 2rpx solid #E4E4E4;
+  overflow:scroll;
+}

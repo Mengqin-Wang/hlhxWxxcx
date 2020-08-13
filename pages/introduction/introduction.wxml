@@ -1,0 +1,35 @@
+<view>
+	<view class="top_banner">
+		<swiper indicator-dots="{{bannerConfig.indicatorDots}}" autoplay="{{bannerConfig.autoplay}}" circular="{{bannerConfig.circular}}" interval="{{bannerConfig.interval}}" duration="{{bannerConfig.duration}}" indicator-color="{{bannerConfig.color}}" indicator-active-color="{{bannerConfig.active}}">
+			<swiper-item wx:for="{{imgList}}" wx:for-item="item" wx:key="id">
+				<image src="{{item.imgUrl}}"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="agency_title flex">
+		<view class="agency_name">{{shopInfo.name}}</view>
+	</view>
+	<view class="agency_info">
+		<view class="agency_add flex">
+			<view class="add_info flex">
+				<view class="add_icon">
+					<image src="https://shylh1d3.oss-cn-hangzhou.aliyuncs.com/wx/location.png"></image>
+				</view>
+				<view class="add_detail">{{shopInfo.address}}</view>
+			</view>
+			<view class="phone_call" bindtap="makephoneCall"> <button class="getphone">
+					<image src="https://shylh1d3.oss-cn-hangzhou.aliyuncs.com/wx/phone.png"></image>
+				</button></view>
+		</view>
+		<view class="serve_time flex">
+			<view class="time_icon">
+				<image src="https://shylh1d3.oss-cn-hangzhou.aliyuncs.com/wx/time.png"></image>
+			</view>
+			<view class="time_detail">服务时间：{{shopInfo.serviceTime}}</view>
+		</view>
+	</view>
+	<view class="agency_content">
+		<view class="content_title">企业简介</view>
+		<view class="content_text">{{shopInfo.introduction}}</view>
+	</view>
+</view>

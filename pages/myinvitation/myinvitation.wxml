@@ -1,0 +1,58 @@
+<!--pages/myinvitation/myinvitation.wxml-->
+<view class="container">
+	<image src='/image/myinvitation.png' mode="widthFix"></image>
+	<view class="title">简单三步 立享权益</view>
+
+	<view class="threeImg">
+		<view class="ImgItem">
+      <view class="circle">
+         <image src="/image/img1.png"></image>
+      </view>
+			<view class="intro">分享邀给好友</view>
+		</view>
+
+    <view class="ImgItem">
+      <view class="circle">
+         <image src="/image/img2.png"></image>
+      </view>
+			<view class="intro">好友使用及购买</view>
+		</view>
+
+    <view class="ImgItem">
+      <view class="circle">
+         <image src="/image/img3.png"></image>
+      </view>
+			<view class="intro">您得到积分奖励</view>
+		</view>
+	</view>
+
+  <view>
+    <navigator open-type="switchTab" url="/pages/index/index" class="btn">立即邀请，拿奖励</navigator>
+  </view>
+
+  <view class="invitation">
+    <view class="left">
+      <view class="footerTitle">累计获得积分</view>
+       <view>
+        <text class="num">1.00</text>
+        <text class="num1">元</text>
+      </view>
+    </view>
+
+    <view class="left right">
+      <view class="footerTitle">累计获得积分</view>
+      <view>
+        <text class="rightnum">0</text>
+        <text class="num1">人</text>
+      </view>
+    </view>
+  </view>
+
+  <view>
+    <navigator class="detail" url="/pages/myinvitation2/myinvitation2">
+      <text>查看详情</text>
+      <view class="detailright"></view>
+    </navigator>
+  </view>
+
+</view>

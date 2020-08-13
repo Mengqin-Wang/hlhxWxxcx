@@ -1,0 +1,60 @@
+<!--pages/exchange.wxml-->
+<view class="top_banner">
+	<swiper indicator-dots="{{bannerConfig.indicatorDots}}" autoplay="{{bannerConfig.autoplay}}" circular="{{bannerConfig.circular}}" interval="{{bannerConfig.interval}}" duration="{{bannerConfig.duration}}" indicator-color="{{bannerConfig.color}}" indicator-active-color="{{bannerConfig.active}}">
+		<swiper-item wx:for="{{imgList}}" wx:for-item="item" wx:key="id">
+			<image src="{{item.imgUrl}}" />
+		</swiper-item>
+	</swiper>
+</view>
+
+<view class="text_box ">
+	<view class="top_text flex">
+		<view class="text_title">
+			少儿创意美术课程
+		</view>
+		<view class="text_num">
+			32人已报名
+		</view>
+	</view>
+	<view class="mid_text flex">
+		<view class="mid_box flex">
+			<view class="mid_img">
+				<image src="/image/exchange.png"></image>
+			</view>
+			<view class="mid_price">
+				999
+			</view>
+			<view class="mid_dis">
+				￥1233
+			</view>
+		</view>
+
+		<view class="right_img">
+			<image src="/image/exchange1.png"></image>
+		</view>
+
+	</view>
+</view>
+
+<view class="footer_box">
+	<view class="foot_text">
+		兑换说明
+	</view>
+	<view class="foot_detail">
+		fdsafdsafsdafsfsdf
+	</view>
+</view>
+
+<view class="footer">
+	<view class="index">
+    <image src="/image/dianpu.png"></image>
+    店铺
+	</view>
+	<view class="contact">
+    <image src="/image/xin2.png"></image>
+    收藏
+  </view>
+	<view class="detail">
+		立即兑换
+	</view>
+</view>

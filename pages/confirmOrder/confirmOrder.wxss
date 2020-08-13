@@ -1,0 +1,9 @@
+/* pages/confirmOrder/confirmOrder.wxss */
+Page{
+  background-color: #F4F4F4;
+}
+
+.main{
+  background-color: white;
+  
+}
