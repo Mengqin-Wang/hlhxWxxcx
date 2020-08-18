@@ -22,7 +22,7 @@
 	<view class="title">兑换好物</view>
 	<view class="hr"></view>
 	<view class="goodList">
-		<view wx:for="{{List}}" wx:key="key" class="goodItem">
+		<view wx:for="{{List}}" wx:key="key" class="goodItem" data-index="{{index}}" bindtap="Gooddetail">
 			<image src="{{item.image}}"></image>
 			<view class="goodTitle">{{item.title}}</view>
 			<view class="need">{{item.need}}积分</view>

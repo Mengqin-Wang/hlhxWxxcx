@@ -1,5 +1,46 @@
 <!--pages/confirmOrder/confirmOrder.wxml-->
 
 <view class="main">
+	<view class="title">课程信息</view>
+	<view class="detail">
+		<image src="{{image}}"></image>
+		<view class="left">
+			<view class="DetailTitle">{{title}}</view>
+			<view class="DetailPrice">
+				<text class="price">￥{{price}}</text>
+				<text class="discount">￥{{discount}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="priceDiscount">
+		<view class="priceText">原价</view>
+		<view class="priceText">￥{{price}}</view>
+	</view>
+  <view class="priceDiscount">
+		<view class="priceText">优惠</view>
+		<view class="priceText price2">￥{{discount}}</view>
+	</view>
 
+  <view class="confirmPay">
+    <text class="PayText">应付</text>
+    <text class="Pay">￥{{price}}</text>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="title">课程信息</view>
+  <form bindsubmit="formSubmit">
+    <view class="name name1">
+      <view class="nameTitle">姓名</view>
+      <input name="name" class="inputClass"  placeholder-class="phClass"  placeholder="请输入您的姓名"></input>
+    </view>
+  
+    <view class="name">
+      <view class="nameTitle">手机号码</view>
+      <input name="phone" class="inputClass"  placeholder-class="phClass"  placeholder="请输入您的手机号码"></input>
+    </view>
+
+    <button class="submitBtn" formType="submit">立即支付</button>
+    
+  </form>
 </view>

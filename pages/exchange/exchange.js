@@ -23,6 +23,12 @@ Page({
     ],
 
   },
+  confirmOrder2:function(e){
+    wx.navigateTo({
+      url: '/pages/confirmOrder2/confirmOrder2',
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面加载

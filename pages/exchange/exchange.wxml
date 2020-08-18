@@ -54,7 +54,7 @@
     <image src="/image/xin2.png"></image>
     收藏
   </view>
-	<view class="detail">
+	<view class="detail" bindtap="confirmOrder2">
 		立即兑换
 	</view>
 </view>

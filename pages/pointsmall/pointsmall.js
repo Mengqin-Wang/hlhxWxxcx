@@ -30,6 +30,12 @@ Page({
       url: '/pages/exchange/exchange',
     })
   },
+  Gooddetail:function(e){
+    console.log(e.currentTarget.dataset)
+    wx.navigateTo({
+      url: '/pages/exchange/exchange',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

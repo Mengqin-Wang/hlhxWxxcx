@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/teacher/teacher",
-    "pages/confirmOrder/confirmOrder",
     "pages/index/index",
+    "pages/confirmOrder2/confirmOrder2",
+    "pages/confirmOrder/confirmOrder",
+    "pages/teacher/teacher",
     "pages/registerTestFirst/registerTestFirst",
     "pages/introduction/introduction",
     "pages/elegant/elegant",
@@ -19,7 +20,6 @@
     "pages/pointsdetail/pointsdetail",
     "pages/recentNews/recentNews",
     "pages/examineeStyle/examineeStyle",
-   
     "pages/scoreInquiry/scoreInquiry",
     "pages/logs/logs",
     "pages/culum/culum",
