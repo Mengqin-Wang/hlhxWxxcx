@@ -1,0 +1,43 @@
+<!--pages/confirmOrder/confirmOrder.wxml-->
+
+<view class="main">
+	<view class="title">课程信息</view>
+	<view class="detail">
+		<image src="{{image}}"></image>
+		<view class="left">
+			<view class="DetailTitle">{{title}}</view>
+			<view class="DetailPrice">
+				<image src="/image/exchange.png"></image>
+				<text class="price">{{score}}</text>
+				<text class="discount">￥{{discount}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="priceDiscount">
+		<view class="priceText">会员积分</view>
+		<view class="priceText">{{score}}</view>
+	</view>
+
+  <view class="confirmPay">
+    <text class="PayText">共计</text>
+    <text class="Pay">{{score}}</text>
+  </view>
+</view>
+
+<view class="bottom">
+  <view class="title">课程信息</view>
+  <form bindsubmit="formSubmit">
+    <view class="name name1">
+      <view class="nameTitle">姓名</view>
+      <input name="name" class="inputClass"  placeholder-class="phClass"  placeholder="请输入您的姓名"></input>
+    </view>
+  
+    <view class="name">
+      <view class="nameTitle">手机号码</view>
+      <input name="phone" class="inputClass"  placeholder-class="phClass"  placeholder="请输入您的手机号码"></input>
+    </view>
+
+    <button class="submitBtn" formType="submit">确认兑换</button>
+    
+  </form>
+</view>
